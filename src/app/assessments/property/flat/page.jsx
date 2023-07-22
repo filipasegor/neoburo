@@ -47,7 +47,7 @@ export default function AssessmentsPropertyFlat() {
         <div className={styles.HeadWrapper}>
           <Headline>Оценка квартиры</Headline>
           <div className={styles.mainDescription}>
-           <Text>Определение рыночной стоимости недвижимости и создание отчета об оценке – официального документа, подтверждающего ликвидность объекта для банка или иных целей</Text>
+           <Text>Определение рыночной стоимости недвижимости и создание отчета<br /> об оценке – официального документа, подтверждающего ликвидность объекта для банка или иных целей</Text>
            <div className={styles.valueWrapper}>
             <Value label="Стоимость" value="от 10 000 ₽"></Value>
             <Value label="Срок" value="от 5 дней"></Value>

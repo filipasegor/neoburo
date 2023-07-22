@@ -6,9 +6,9 @@ import styles from './styles.module.scss'
 export default function Value({label, value}) {
 
   return (
-    <div className={styles.valueWrapper}>
+    <div className={styles.rowWrapper}>
       <p className={styles.rowLabel}>{label}</p>
-      <h2 className={styles.rowValue}>{value}</h2>
+      <p className={styles.rowValue}>{value}</p>
     </div>
   );
 }

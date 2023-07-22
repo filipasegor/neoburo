@@ -1,4 +1,4 @@
-import styles from './globals.scss'
+import styles from './globals.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
