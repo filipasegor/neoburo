@@ -40,7 +40,7 @@ export default function Assessments() {
         <div className={styles.cardRow}>
           <Card href="assessments/property" >
 
-            <Link className={styles.SubHeadingLink} href="/assessments">Оценка недвижимого имущества</Link>
+            <Link className={styles.SubHeadingLink} href="/assessments/property">Оценка недвижимого имуществаfdfsdsd</Link>
 
             <Link className={styles.pageLink} href="/assessments">Квартира</Link>
             <Link className={styles.pageLink} href="/assessments">Комната</Link>

@@ -14,3 +14,6 @@ export { default as LogoDesc } from '@/components/mains/LogoDesc/LogoDesc';
 export { default as Row } from '@/components/mains/row/Row';
 export { default as SegmentButton } from '@/components/mains/SegmentButton/SegmentButton';
 export { default as Value } from '@/components/mains/Value/Value';
+export { default as Footer } from '@/components/mains/layout/Footer';
+export { default as LeftSide } from '@/components/mains/layout/LeftSide';
+export { default as RightSide } from '@/components/mains/layout/RightSide';
