@@ -3,37 +3,26 @@ import Link from 'next/link'
 
 import styles from './page.module.scss'
 
-import ArrowBack from '../../../../components/mains/ArrowBack/ArrowBack'
-import Headline from '../../../../components/typography/Headline/Headline'
-import HeadlineSm from '../../../../components/typography/Headline/HeadlineSm'
-import Text from '../../../../components/typography/Text/Text'
-import Card from '../../../../components/mains/card/Card'
-import SubHeading from '../../../../components/typography/SubHeading/SubHeading'
-import Bullet from '../../../../components/mains/Bullet/Bullet'
-import ImgWrapper from '../../../../components/mains/ImgWrapper/ImgWrapper'
-import DocumentWrapper from '../../../../components/mains/DocumentWrapper/DocumentWrapper'
-import Value from '../../../../components/mains/Value/Value'
-import LogoDesc from '../../../../components/mains/LogoDesc/LogoDesc'
+import { 
+  Headline, 
+  HeadlineSm, 
+  SubHeading, 
+  Text, 
+  TextBold, 
+  SegmentButton, 
+  Card, 
+  CardSecond, 
+  Row, 
+  LogoDesc,
+  Bullet, 
+  Value,
+  ImgWrapper,
+  ArrowBack,
+  DocumentWrapper
+} from '@/components/index'
 
+import Images from '@/assets/index';
 
-import flat from '../../../../../public/flat.png'
-import FlatDoc1 from '../../../../../public/FlatDoc1.png'
-import FlatDoc2 from '../../../../../public/FlatDoc2.png'
-import FlatDoc3 from '../../../../../public/FlatDoc3.png'
-
-import raff from '../../../../../public/raff.png'
-import Alfa from '../../../../../public/alfa.png'
-import tink from '../../../../../public/tink.png'
-import vtb from '../../../../../public/vtb.png'
-
-import bank1 from '../../../../../public/bank1.png'
-import bank2 from '../../../../../public/bank2.png'
-import bank3 from '../../../../../public/bank3.png'
-
-import propertyDoc1 from '../../../../../public/propertyDoc1.png'
-import propertyDoc2 from '../../../../../public/propertyDoc2.png'
-import propertyDoc3 from '../../../../../public/propertyDoc3.png'
-import propertyDoc4 from '../../../../../public/propertyDoc4.png'
 
 export const metadata = {
   title: 'Оценка квартиры',
@@ -57,15 +46,15 @@ export default function AssessmentsPropertyFlat() {
         <Image 
           className={styles.mainImage}
           alt="flat"
-          src={flat}>
+          src={Images.flat}>
         </Image>
 
       <HeadlineSm>Как проводится оценка и что для этого нужно?</HeadlineSm>
       <Text style={{width: "730px", marginTop: "20px"}}>Оценка недвижимости начинается с предварительной консультации и заключения договора. В договоре обозначается задание на оценку, сроки проведения стоимость услуг. Для заключения договора на оценку квартиры для ипотеки или иных целей вам потребуется:</Text>
         <div className={styles.documentWrapper}>
-          <DocumentWrapper src={FlatDoc1} alt="FlatDoc1" desc="Выписка из ЕГРН или договор долевого участия с актом приема-передачи"/>
-          <DocumentWrapper src={FlatDoc2} alt="FlatDoc2" desc="Экспликация и поэтажный план на квартиру (технический паспорт)" />
-          <DocumentWrapper src={FlatDoc3} alt="FlatDoc3" desc="Экспликация и поэтажный план на квартиру (технический паспорт)" />
+          <DocumentWrapper src={Images.FlatDoc1} alt="FlatDoc1" desc="Выписка из ЕГРН или договор долевого участия с актом приема-передачи"/>
+          <DocumentWrapper src={Images.FlatDoc2} alt="FlatDoc2" desc="Экспликация и поэтажный план на квартиру (технический паспорт)" />
+          <DocumentWrapper src={Images.FlatDoc3} alt="FlatDoc3" desc="Экспликация и поэтажный план на квартиру (технический паспорт)" />
         </div>
         <Text style={{width: "730px", marginBottom: "50px"}}>После получения копий документов, при необходимости, наш специалист выезжает на осмотр объекта оценки, осматривает объект и проводит фотоциксацию. Процедура оценки квартиры занимает до 3 рабочих дней. Далее отчет направляется клиенту вместе с актом оказанных услуг, на котором клиенту необходимо поставить подпись. Доставка отчета возможна в зависимости от района расположения</Text>
         
@@ -89,35 +78,35 @@ export default function AssessmentsPropertyFlat() {
 
         <HeadlineSm style={{marginTop: "80px"}}>Наша компания аккредитована:</HeadlineSm>
         <div className={styles.logoDescWrapper}>
-          <LogoDesc src={Alfa} alt="alfa" desc="в Сбербанке" />
-          <LogoDesc src={raff} alt="tink" desc="Газпромбанке" />
-          <LogoDesc src={vtb} alt="tink" desc="Совкомбанке" />
-          <LogoDesc src={tink} alt="tink" desc="Банке Уралсиб" />
-          <LogoDesc src={vtb} alt="tink" desc="Московском индустриальном бане" />
-          <LogoDesc src={tink} alt="tink" desc="Райффайзенбанке" />
-          <LogoDesc src={raff} alt="tink" desc="Банк Россия" />
+          <LogoDesc src={Images.Alfa} alt="alfa" desc="в Сбербанке" />
+          <LogoDesc src={Images.raff} alt="tink" desc="Газпромбанке" />
+          <LogoDesc src={Images.vtb} alt="tink" desc="Совкомбанке" />
+          <LogoDesc src={Images.tink} alt="tink" desc="Банке Уралсиб" />
+          <LogoDesc src={Images.vtb} alt="tink" desc="Московском индустриальном бане" />
+          <LogoDesc src={Images.tink} alt="tink" desc="Райффайзенбанке" />
+          <LogoDesc src={Images.raff} alt="tink" desc="Банк Россия" />
         </div>
 
         <ImgWrapper desc="Отчеты нашей компании принимаются банками:">
           <Image 
             className={styles.bankImage}
             alt="bank1"
-            src={bank1}>
+            src={Images.bank1}>
           </Image>
           <Image 
             className={styles.bankImage}
             alt="bank2"
-            src={bank2}>
+            src={Images.bank2}>
           </Image>
           <Image 
             className={styles.bankImage}
             alt="bank3"
-            src={bank3}>
+            src={Images.bank3}>
           </Image>
           <Image 
             className={styles.bankImage}
             alt="bank1"
-            src={bank1}>
+            src={Images.bank1}>
           </Image>
         </ImgWrapper>
 
@@ -125,22 +114,22 @@ export default function AssessmentsPropertyFlat() {
           <Image 
             className={styles.document}
             alt="propertyDoc1"
-            src={propertyDoc1}>
+            src={Images.propertyDoc1}>
           </Image>
           <Image 
             className={styles.document}
             alt="propertyDoc2"
-            src={propertyDoc2}>
+            src={Images.propertyDoc2}>
           </Image>
           <Image 
             className={styles.document}
             alt="propertyDoc3"
-            src={propertyDoc3}>
+            src={Images.propertyDoc3}>
           </Image>
           <Image 
             className={styles.document}
             alt="propertyDoc4"
-            src={propertyDoc4}>
+            src={Images.propertyDoc4}>
           </Image>
         </ImgWrapper>
         

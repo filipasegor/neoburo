@@ -23,13 +23,12 @@ export default function LeftSide() {
             </Link>
           </div>
         <div className={styles.navbar}>
-          <Link className={styles.link} href="/">Главная</Link>
           <Link className={styles.link} href="/assessments">Оценка</Link>   
-          <Link className={styles.link}  href="/expertises">Экспертиза</Link>
-          <Link className={styles.link}  href="/laws">Юридические услуги</Link>    
-          <Link className={styles.link}  href="/team">Эксперты</Link> 
-          <Link className={styles.link}  href="/about">О компании</Link>
-          <Link className={styles.link}  href="/contacts">Контакты</Link>
+          <Link className={styles.link} href="/expertises">Экспертиза</Link>
+          <Link className={styles.link} href="/laws">Юридическая<br />поддержка</Link> 
+          <Link className={styles.link} href="/team">Эксперты</Link> 
+          <Link className={styles.link} href="/about">О компании</Link>
+          <Link className={styles.link} href="/contacts">Контакты</Link>
         </div>
         <div className={styles.socialLinks}>
           <Link href="/">

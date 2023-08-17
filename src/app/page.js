@@ -1,28 +1,22 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
-import Headline from '@/components/typography/Headline/Headline'
-import HeadlineSm from '@/components/typography/Headline/HeadlineSm'
-// import Headline from '../components/typography/Headline/Headline'
-import SubHeading from '../components/typography/SubHeading/SubHeading'
-import Text from '../components/typography/Text/Text'
-import TextBold from '../components/typography/Text/TextBold'
-import SegmentButton from '../components/mains/SegmentButton/SegmentButton'
-import Card from '../components/mains/card/Card'
-import CardSecond from '../components/mains/card/CardSecond'
-import Row from '../components/mains/row/Row'
-import LogoDesc from '../components/mains/LogoDesc/LogoDesc'
 
-import firstExample from '../../public/firstExample.png'
-import secondExample from '../../public/secondExample.png'
-import thirdExample from '../../public/thirdExample.png'
-import raff from '../../public/raff.png'
-import Alfa from '../../public/alfa.png'
-import tink from '../../public/tink.png'
-import vtb from '../../public/vtb.png'
-import sign from '../../public/sign.png'
-import portrait from '../../public/portrait.png'
-import commas from '../../public/comas.svg'
+import { 
+  Headline, 
+  HeadlineSm, 
+  SubHeading, 
+  Text, 
+  TextBold, 
+  SegmentButton, 
+  Card, 
+  CardSecond, 
+  Row, 
+  LogoDesc 
+} from '@/components/index'
+
+
+import Images from '@/assets/index';
 
 
 
@@ -87,6 +81,12 @@ export default function Home() {
               <Text>Оценка доли уставного капитала</Text>
             </Card>
           </div>
+
+          <div className={styles.cardRow} style={{width: "33%"}}>
+            <Card href="/" linkText="Подробнее" >
+              <SubHeading style={{height: "60px"}}>Составление рецензий на отчет об оценке</SubHeading>
+            </Card>
+          </div>
         </div>
         
 
@@ -103,7 +103,7 @@ export default function Home() {
               style={{width: "auto", height: "185px"}}
               className={styles.example}
               alt="arrow"
-              src={firstExample}>
+              src={Images.firstExample}>
             </Image>
             <Row label='Клиент' value="Частное лицо"></Row>
             <Row label='Сумма взыскания' value="800 тыс. ₽"></Row>
@@ -117,7 +117,7 @@ export default function Home() {
               style={{width: "auto", height: "185px"}}
               className={styles.example}
               alt="arrow"
-              src={secondExample}>
+              src={Images.secondExample}>
             </Image>
             <Row label='Клиент' value="Частное лицо"></Row>
             <Row label='Дата экспертизы' value="22.05.2022"></Row>
@@ -131,7 +131,7 @@ export default function Home() {
               style={{width: "auto", height: "185px"}}
               className={styles.example}
               alt="arrow"
-              src={thirdExample}>
+              src={Images.thirdExample}>
             </Image>
             <Row label='Клиент' value="Частное лицо"></Row>
             <Row label='Сумма взыскания' value="800 тыс. ₽"></Row>
@@ -145,21 +145,21 @@ export default function Home() {
         </HeadlineSm>
 
         <div className={styles.logoDescWrapper}>
-          <LogoDesc src={Alfa} alt="alfa" desc="Альфа-Банк" />
-          <LogoDesc src={tink} alt="tink" desc="Тинькофф" />
-          <LogoDesc src={vtb} alt="vtb" desc="ВТБ" />
-          <LogoDesc src={tink} alt="tink" desc="Тинькофф" />
-          <LogoDesc src={Alfa} alt="alfa" desc="РоссельхозБанк" />
-          <LogoDesc src={vtb} alt="vtb" desc="ВТБ" />
-          <LogoDesc src={tink} alt="tink" desc="Тинькофф" />
-          <LogoDesc src={raff} alt="raff" desc="Раффайзен" />
-          <LogoDesc src={tink} alt="tink" desc="Росгострах" />
-          <LogoDesc src={raff} alt="raff" desc="Раффайзен" />
-          <LogoDesc src={vtb} alt="vtb" desc="ВТБ" />
-          <LogoDesc src={tink} alt="tink" desc="Серпуховской суд" />
-          <LogoDesc src={raff} alt="raff" desc="Люберецкий суд" />
-          <LogoDesc src={tink} alt="tink" desc="Московский суд" />
-          <LogoDesc src={raff} alt="raff" desc="Правительство Москвы" />
+          <LogoDesc src={Images.Alfa} alt="alfa" desc="Альфа-Банк" />
+          <LogoDesc src={Images.tink} alt="tink" desc="Тинькофф" />
+          <LogoDesc src={Images.vtb} alt="vtb" desc="ВТБ" />
+          <LogoDesc src={Images.tink} alt="tink" desc="Тинькофф" />
+          <LogoDesc src={Images.Alfa} alt="alfa" desc="РоссельхозБанк" />
+          <LogoDesc src={Images.vtb} alt="vtb" desc="ВТБ" />
+          <LogoDesc src={Images.tink} alt="tink" desc="Тинькофф" />
+          <LogoDesc src={Images.raff} alt="raff" desc="Раффайзен" />
+          <LogoDesc src={Images.tink} alt="tink" desc="Росгострах" />
+          <LogoDesc src={Images.raff} alt="raff" desc="Раффайзен" />
+          <LogoDesc src={Images.vtb} alt="vtb" desc="ВТБ" />
+          <LogoDesc src={Images.tink} alt="tink" desc="Серпуховской суд" />
+          <LogoDesc src={Images.raff} alt="raff" desc="Люберецкий суд" />
+          <LogoDesc src={Images.tink} alt="tink" desc="Московский суд" />
+          <LogoDesc src={Images.raff} alt="raff" desc="Правительство Москвы" />
         </div>
 
         <div className={styles.commentBanner}>
@@ -167,7 +167,7 @@ export default function Home() {
           <Image 
               className={styles.commas}
               alt="commas"
-              src={commas}>
+              src={Images.commas}>
             </Image>
             <p className={styles.commentBannerText}>
               Мы всегда отдаем предпочтение тем экспертам, которые выполняют свою работу чётко и в срок. На экспертов НЭО-Бюро можно полностью положить и довериться их проффесионализму
@@ -177,13 +177,13 @@ export default function Home() {
             <Image 
               className={styles.sign}
               alt="sign"
-              src={sign}>
+              src={Images.sign}>
             </Image>
           </div>   
             <Image 
               className={styles.portrait}
               alt="portrait"
-              src={portrait}>
+              src={Images.portrait}>
             </Image>
         </div>
 

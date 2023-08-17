@@ -3,24 +3,27 @@ import Link from 'next/link'
 
 import styles from './page.module.scss'
 
-import ArrowBack from '../../../components/mains/ArrowBack/ArrowBack'
-import Headline from '../../../components/typography/Headline/Headline'
-import HeadlineSm from '../../../components/typography/Headline/HeadlineSm'
-import Text from '../../../components/typography/Text/Text'
-import Card from '../../../components/mains/card/Card'
-import SubHeading from '../../../components/typography/SubHeading/SubHeading'
-import Bullet from '../../../components/mains/Bullet/Bullet'
-import ImgWrapper from '../../../components/mains/ImgWrapper/ImgWrapper'
+import { 
+  Headline, 
+  HeadlineSm, 
+  SubHeading, 
+  Text, 
+  TextBold, 
+  SegmentButton, 
+  Card, 
+  CardSecond, 
+  Row, 
+  LogoDesc,
+  Bullet, 
+  ImgWrapper,
+  ArrowBack,
+} from '@/components/index'
 
-import property from '../../../../public/property.png'
-import propertyDoc1 from '../../../../public/propertyDoc1.png'
-import propertyDoc2 from '../../../../public/propertyDoc2.png'
-import propertyDoc3 from '../../../../public/propertyDoc3.png'
-import propertyDoc4 from '../../../../public/propertyDoc4.png'
+import Images from '@/assets/index';
 
 export const metadata = {
   title: 'Оценка недвижимости',
-  description: 'Независимая оценка и экспертиза всех видов имущества',
+  description: 'Оценка недвижимости',
 }
 
 export default function AssessmentsProperty() {
@@ -28,14 +31,14 @@ export default function AssessmentsProperty() {
     <main className={styles.main}>
         <ArrowBack /> 
         <div className={styles.HeadWrapper}>
-          <Headline>Оценка недвижимого имущества</Headline>
+          <Headline>{metadata.description}</Headline>
           <Text>Oцeнка cтoимocти нeдвижимocти — это профессиональная деятельность, направленная на установление стоимости конкретного объекта. Объектами для оценки недвижимости являются квартиры и комнаты, дачи и земля, коммерческие объекты (офисы, производственные цеха и тд.).</Text>
           <Text>Компания НЭО Бюро проведет для вас оценочное исследование для достижения любой цели. Наши специалисты предоставят точный результат. Обращайтесь на первую консультацию, чтобы узнать подробности.</Text>
         </div> 
         <Image 
           className={styles.mainImage}
           alt="property"
-          src={property}>
+          src={Images.property}>
         </Image>
 
       <HeadlineSm>Направления оценки недвижимости:</HeadlineSm>
@@ -96,25 +99,24 @@ export default function AssessmentsProperty() {
           <Image 
             className={styles.document}
             alt="propertyDoc1"
-            src={propertyDoc1}>
+            src={Images.propertyDoc1}>
           </Image>
           <Image 
             className={styles.document}
             alt="propertyDoc2"
-            src={propertyDoc2}>
+            src={Images.propertyDoc2}>
           </Image>
           <Image 
             className={styles.document}
             alt="propertyDoc3"
-            src={propertyDoc3}>
+            src={Images.propertyDoc3}>
           </Image>
           <Image 
             className={styles.document}
             alt="propertyDoc4"
-            src={propertyDoc4}>
+            src={Images.propertyDoc4}>
           </Image>
-        </ImgWrapper>
-      
+        </ImgWrapper>      
 
     </main>
   )
