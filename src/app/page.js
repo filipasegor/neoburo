@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import Link from 'next/link'
 
 import { 
@@ -27,7 +27,7 @@ export default function Home() {
     <div className={styles.gradient}></div>
     <main className={styles.main}>
       <div className={styles.mainHeadlineWrapper}>
-        <h1 className={styles.mainHeadline}>Независимая оценка и экспертиза всех видов имуществаerwerwere</h1>
+        <h1 className={styles.mainHeadline}>Независимая оценка и экспертиза всех видов имущества</h1>
         <Text style={{width: '50%' }}>Мы делаем независимую экспертизу и оцениваем рыночную стоимость имущества. Работаем в рамках судебных и досудебных споров или для сделок с имуществом.</Text>
         <div className={styles.buttonWrapper}>
           <SegmentButton className="active">ОЦЕНКА</SegmentButton>
